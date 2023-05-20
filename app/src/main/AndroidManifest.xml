@@ -30,7 +30,9 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".SuccessActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".ParametersActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".NextActivity" android:theme="@style/AppTheme"/>
+
     </application
         >
 

@@ -1,6 +1,8 @@
 package com.example.regenerationoil;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,6 +18,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        // Получение контекста приложения
+        Context context = getApplicationContext();
+
+        // Удаление базы данных
+        context.deleteDatabase("regeneration_database");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -24,8 +32,10 @@ public class MainActivity extends AppCompatActivity {
         Button loginButton = findViewById(R.id.loginButton);
 
         // Инициализация базы данных Room
-        database = Room.databaseBuilder(getApplicationContext(),
-                AppDatabase.class, "my-database").build();
+        database = Room.databaseBuilder(context, AppDatabase.class, "regeneration_oil")
+                .fallbackToDestructiveMigration()
+                .build();
+
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     if (user != null) {
-                                        Intent intent = new Intent(MainActivity.this, SuccessActivity.class);
+                                        Intent intent = new Intent(MainActivity.this, ParametersActivity.class);
                                         startActivity(intent);
                                         finish();
                                     } else {
@@ -67,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                User user = new User("Kirill", "1111");
+                User user = new User("1", "1");
                 database.userDao().insert(user);
             }
         }).start();
