@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Regeneration Oil</string>
+    <string name="auth_title">Авторизация в системе</string>
+    <string name="auth_login">Логин</string>
+    <string name="auth_pass">Пароль</string>
+    <string name="auth_enter">Войти</string>
+
+    <string name="par_title">Параметры запуска</string>
+    <string name="par_oilType">Тип масла</string>
+    <string name="par_tf">Трансформаторное</string>
+    <string name="par_tb">Турбинное</string>
+    <string name="par_gd">Гидравлическое</string>
+
+
+    <string name="par_workType">Цикл работы</string>
+    <string name="par_cl">Только очистка</string>
+    <string name="par_clReg">Очистка и регенерация</string>
+
+    <string name="par_oilVolume">Объем масла (тонны):</string>
+    <string name="par_initialClean">Начальный класс чистоты:</string>
+    <string name="par_waterContent">Содержание воды (%):</string>
+    <string name="par_gasContent">Содержание газа (%):</string>
+
+    <string name="par_acidity">Кислотность:</string>
+    <string name="par_dielectricLoss">tg угла диэлектрических потерь:</string>
+    <string name="par_breakdownVoltage">Пробойное напряжение:</string>
+
+    <string name="par_start">Запустить</string>
+
+
+
+
+</resources>
