@@ -29,5 +29,33 @@
 
 
 
+    <string name="work_fil_title">Фильтрация</string>
+    <string name="work_fil_base">Исходный к.ч.:</string>
+    <string name="work_fil_target">Необх. к.ч.:</string>
+    <string name="work_fil_current">Текущий к.ч.:</string>
+
+    <string name="work_dry_title">Осушка</string>
+    <string name="work_dry_base">Исх. % воды:</string>
+    <string name="work_dry_target">Необходимый %:</string>
+    <string name="work_dry_current">Текущий %:</string>
+
+    <string name="work_dg_title">Дегазация</string>
+    <string name="work_dg_base">Исх. % газа:</string>
+    <string name="work_dg_target">Необходимый %:</string>
+    <string name="work_dg_current">Текущий %:</string>
+
+    <string name="work_reg_title">Регенерация</string>
+    <string name="work_reg_base">Ac:</string>
+    <string name="work_reg_target">Tg:</string>
+    <string name="work_reg_current">Uп:</string>
+
+    <string name="work_add_title">Присадки</string>
+    <string name="work_add_current">Введено:</string>
+    <string name="work_add_target">Требуется:</string>
+
+    <string name="work_status_wait">Ожидание</string>
+    <string name="work_status_run">В процессе</string>
+    <string name="work_baseValue">0</string>
+
 
 </resources>

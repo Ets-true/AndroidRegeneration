@@ -1,0 +1,638 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="102dp"
+        android:paddingEnd="102dp"
+        android:layout_marginTop="52dp"
+        >
+
+        <LinearLayout
+            android:layout_width="194dp"
+            android:layout_height="224dp"
+            android:orientation="vertical"
+            android:padding="6dp"
+            android:background="@drawable/block_border"
+            android:layout_marginEnd="44dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/work_fil_title"
+                android:textSize="18sp"
+                android:textColor="#707070"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="28dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:text="@string/work_fil_base"
+                    android:layout_marginStart="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/baseFil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/work_baseValue"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="@string/work_fil_target"
+                    android:layout_marginStart="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/targetFil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/work_baseValue"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="41dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/work_fil_current"/>
+                <TextView
+                    android:id="@+id/currentFil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/work_baseValue"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/status1Block"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:gravity="center"
+                android:background="#DCDCDC">
+
+                <TextView
+                    android:id="@+id/status1Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ожидание"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="194dp"
+            android:layout_height="224dp"
+            android:orientation="vertical"
+            android:padding="6dp"
+            android:background="@drawable/block_border"
+            android:layout_marginEnd="44dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/work_dry_title"
+                android:textSize="18sp"
+                android:textColor="#707070"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="28dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:text="@string/work_dry_base"
+                    android:layout_marginStart="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/baseDry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/work_baseValue"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="@string/work_dry_target"
+                    android:layout_marginStart="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/targetDry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/work_baseValue"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="41dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/work_dry_current"/>
+                <TextView
+                    android:id="@+id/currentDry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/work_baseValue"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/status2Block"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:gravity="center"
+                android:background="#DCDCDC">
+
+                <TextView
+                    android:id="@+id/status2Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ожидание"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="194dp"
+            android:layout_height="224dp"
+            android:orientation="vertical"
+            android:padding="6dp"
+            android:background="@drawable/block_border"
+            android:layout_marginEnd="44dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/work_dg_title"
+                android:textSize="18sp"
+                android:textColor="#707070"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="28dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:text="@string/work_dg_base"
+                    android:layout_marginStart="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/baseDg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/work_baseValue"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="@string/work_dg_target"
+                    android:layout_marginStart="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/targetDg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/work_baseValue"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="41dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/work_dg_current"/>
+                <TextView
+                    android:id="@+id/currentDg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/work_baseValue"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/status3Block"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:gravity="center"
+                android:background="#DCDCDC">
+
+                <TextView
+                    android:id="@+id/status3Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ожидание"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="102dp"
+    android:paddingEnd="102dp"
+    android:layout_marginTop="40dp"
+        >
+
+    <LinearLayout
+        android:layout_width="194dp"
+        android:layout_height="224dp"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:background="@drawable/block_border"
+        android:layout_marginEnd="44dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/work_reg_title"
+            android:textSize="18sp"
+            android:textColor="#707070"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="28dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:text="@string/work_reg_base"
+                android:layout_marginStart="8dp"
+                />
+
+            <TextView
+                android:id="@+id/baseAcidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginStart="8dp"
+                android:text="@string/work_baseValue"/>
+            <TextView
+                android:id="@+id/targetAcidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginStart="5dp"
+                android:text="@string/work_baseValue"/>
+            <TextView
+                android:id="@+id/currentAcidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginStart="5dp"
+                android:text="@string/work_baseValue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="@string/work_reg_target"
+                android:layout_marginStart="8dp"
+                />
+
+            <TextView
+                android:id="@+id/baseDielectricLoss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginStart="8dp"
+                android:text="@string/work_baseValue"/>
+            <TextView
+                android:id="@+id/targetDielectricLoss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginStart="5dp"
+                android:text="@string/work_baseValue"/>
+            <TextView
+                android:id="@+id/currentDielectricLoss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginStart="5dp"
+                android:text="@string/work_baseValue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="41dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginStart="8dp"
+                android:text="@string/work_reg_current"/>
+            <TextView
+                android:id="@+id/baseBreakdownVoltage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginStart="8dp"
+                android:text="@string/work_baseValue"/>
+            <TextView
+                android:id="@+id/targetBreakdownVoltage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginStart="5dp"
+                android:text="@string/work_baseValue"/>
+            <TextView
+                android:id="@+id/currentBreakdownVoltage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginStart="5dp"
+                android:text="@string/work_baseValue"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/status4Block"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:background="#DCDCDC">
+
+            <TextView
+                android:id="@+id/status4Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ожидание"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="194dp"
+        android:layout_height="224dp"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:background="@drawable/block_border"
+        android:layout_marginEnd="44dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/work_add_title"
+            android:textSize="18sp"
+            android:textColor="#707070"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="39dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:text="@string/work_add_current"
+                android:layout_marginStart="8dp"
+                />
+
+            <TextView
+                android:id="@+id/currentAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginStart="10dp"
+                android:text="@string/work_baseValue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="57dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="@string/work_add_target"
+                android:layout_marginStart="8dp"
+                />
+
+            <TextView
+                android:id="@+id/targetAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginStart="10dp"
+                android:text="@string/work_baseValue"/>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/status5Block"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:background="#DCDCDC">
+
+            <TextView
+                android:id="@+id/status5Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ожидание"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="53dp"
+        android:paddingEnd="28dp"
+        android:paddingStart="28dp"
+        >
+    <Button
+        android:enabled="false"
+        android:id="@+id/buttonNext"
+        android:layout_width="260dp"
+        android:layout_height="34dp"
+        android:background="#074492"
+        android:layout_marginBottom="13dp"
+        android:text="Следующий" />
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/buttonRestart"
+        android:layout_width="260dp"
+        android:layout_height="34dp"
+        android:background="#FFA200"
+        android:layout_marginBottom="13dp"
+        android:text="Перезапуск" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="260dp"
+        android:layout_height="34dp"
+        android:background="#79C982"
+        android:text="Запустить" />
+    </LinearLayout>
+</RelativeLayout>

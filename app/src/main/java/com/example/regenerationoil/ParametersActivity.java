@@ -3,7 +3,6 @@ package com.example.regenerationoil;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,8 +10,6 @@ import android.widget.RadioButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
-
-import java.util.List;
 
 public class ParametersActivity extends AppCompatActivity {
     private RadioButton transformerOilRadioButton, turbineOilRadioButton, hydraulicOilRadioButton;
@@ -116,7 +113,7 @@ public class ParametersActivity extends AppCompatActivity {
                 // Сохранение job в базе данных Room
                 long id = database.jobDao().insertJob(job);
 
-                Intent intent = new Intent(ParametersActivity.this, NextActivity.class);
+                Intent intent = new Intent(ParametersActivity.this, WorkActivity.class);
                 intent.putExtra("jobId", String.valueOf(id));
                 startActivity(intent);
             }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
 
         android:allowBackup="true"
@@ -31,7 +31,7 @@
                 android:value="" />
         </activity>
         <activity android:name=".ParametersActivity" android:theme="@style/AppTheme"/>
-        <activity android:name=".NextActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".WorkActivity" android:theme="@style/AppTheme"/>
 
     </application
         >
